@@ -41,19 +41,19 @@ To run this project locally, follow these steps:
    git clone https://github.com/your-repo-url.git
 Navigate to the project folder:
 
-sh
+ ```sh
 Copy
 Edit
 cd project-folder
 Install dependencies:
 
-sh
+ ```sh
 Copy
 Edit
 npm install
 Start the development server:
 
-sh
+ ```sh
 Copy
 Edit
 npm run dev
