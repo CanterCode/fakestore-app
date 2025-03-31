@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom"
 
 function HomePage() {
   return (
@@ -16,10 +17,10 @@ function HomePage() {
             <h1 className="fw-bold p-2">Welcome to our store!</h1>
             <h4 className="text-muted p-1">
               Thank you for visiting our store! <br />
-              We have a wide array or products that we hope you enjoy!
+              We have a wide array of products that we hope you enjoy!
             </h4>
-            <p className="pt-3">Click below to view our current inventory.</p>
-            <Button variant="primary" size="lg" href="/productlist">
+            <p className="pt-">Click below to view our current inventory.</p>
+            <Button variant="primary" as={Link} size="lg" to="/productlist">
               View Products
             </Button>
           </Col>

@@ -66,7 +66,7 @@ function ProductList() {
                 <Card.Title className="text-truncate" title={product.title}>
                   {product.title}
                 </Card.Title>
-                <Card.Subtitle className="mt-1 mb-3 text-muted">
+                <Card.Subtitle className="mt-1 mb-2 text-muted">
                   <strong>${product.price.toFixed(2)}</strong>
                 </Card.Subtitle>
                 <Button

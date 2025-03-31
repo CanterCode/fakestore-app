@@ -18,9 +18,6 @@ function NavBar() {
           <Nav.Link as={NavLink} to="/addproduct" activeclassname="active">
             Add-Product
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/editproduct" activeclassname="active">
-            Edit-Product
-          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

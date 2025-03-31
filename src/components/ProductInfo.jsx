@@ -9,7 +9,6 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import Spinner from "react-bootstrap/Spinner";
 
-
 function ProductInfo() {
   const { id } = useParams(); // Get the product ID from the URL
   const [product, setProduct] = useState(null);
@@ -74,8 +73,11 @@ function ProductInfo() {
         <Col md={8}>
           <Card className="h-100 border-0">
             <Card.Body>
-              <Card.Subtitle className="text-muted mb-3 display-6 ps-5">
+              <Card.Subtitle className="text-muted mb-3 display-5 ps-5">
                 <strong>${product.price.toFixed(2)}</strong>
+              </Card.Subtitle>
+              <Card.Subtitle className="text-muted mb-4 ps-5">
+                <strong className="text-capitalize">Category: {product.category}</strong>
               </Card.Subtitle>
               <Card.Text
                 style={{
@@ -90,7 +92,10 @@ function ProductInfo() {
                 <Button variant="success" className="mb-3" size="lg">
                   Add to Cart
                 </Button>
-                <Button variant="secondary" to={`/productlist`} size="lg">
+                <Button as={Link} to={`/editproduct/${product.id}`} variant="primary" className="mb-3" size="lg" >
+                  Update Product
+                </Button>
+                <Button as={Link} to={`/productlist`} variant="secondary" size="lg">
                   Return to Products
                 </Button>
               </div>
