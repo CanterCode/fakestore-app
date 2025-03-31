@@ -1,12 +1,59 @@
-# React + Vite
+# Fake Store App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Module 4 Final Project
 
-Currently, two official plugins are available:
+This project is a simple e-commerce dashboard built with React and Bootstrap. It allows users to browse products, edit product details, and manage inventory. The application fetches product data from an API and provides an interface for updating and deleting products.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+The application features:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- A product listing page displaying all available products.
+- A product details page with an option to edit or delete products.
+- A form for updating product information.
+- API integration with `FakeStoreAPI` to fetch and modify product data.
+
+## Development Process
+
+AI tools were used to generate basic UI components, such as cards and forms, to speed up the development process. I also used AI to help me generate and edit an effective Read Me. The generated components were then customized to meet specific project requirements. The UI is built using Bootstrap for a responsive design. This project serves as a foundation for building a more complex e-commerce platform with additional features.
+
+## Technologies Used
+
+- **React**: Component-based UI development.
+- **Vite**: Fast and lightweight build tool.
+- **React Router**: Enables navigation between pages.
+- **Bootstrap**: Provides a clean and responsive design.
+- **Axios**: Handles API requests for fetching and updating products.
+
+## Features
+
+- View product details, including name, price, category, and description.
+- Edit product information and update it in the API.
+- Delete products from the API.
+- Responsive and user-friendly interface.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo-url.git
+Navigate to the project folder:
+
+sh
+Copy
+Edit
+cd project-folder
+Install dependencies:
+
+sh
+Copy
+Edit
+npm install
+Start the development server:
+
+sh
+Copy
+Edit
+npm run dev
